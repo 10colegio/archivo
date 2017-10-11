@@ -8,7 +8,14 @@ class Nota(models.Model):
 	periodo= models.CharField(max_length=50)
 	año= models.CharField(max_length=50)
 
+class Estudiante(models.Model):
+	nombre = models.CharField(max_length=50)
+	apellido= models.CharField(max_length=50)
+	nacimiento = models.DateField()
+	grado = models.CharField(max_length=2)
+
 	
+
 	
 	
 
